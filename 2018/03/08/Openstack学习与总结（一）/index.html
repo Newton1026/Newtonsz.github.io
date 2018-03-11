@@ -532,11 +532,11 @@
 <li>nova-compute通过keystone的RESTfull API拿到认证的token，并通过HTTP请求cinder-api获取创建虚拟机所需要的持久化存储信息。</li>
 <li>cinder-api向keystone认证token是否有效，并返回验证结果</li>
 <li>token验证通过，nova-compute获得虚拟机持久化存储信息。</li>
-<li>nova-compute根据instance的信息调用配置的虚拟化驱动来创建虚拟机。<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><blockquote>
+<li>nova-compute根据instance的信息调用配置的虚拟化驱动来创建虚拟机。</li>
+</ol>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><blockquote>
 <p>[1] Openstack源码：<a href="https://releases.openstack.org/queens/index.html" target="_blank" rel="noopener">Openstack</a><br>[2] Github源码：<a href="https://github.com/openstack/nova" target="_blank" rel="noopener">Openstack</a><br>[3] Openstack Manuals：<a href="https://docs.openstack.org/queens/" target="_blank" rel="noopener">Openstack</a><br>[4] Openstack wiki：<a href="https://wiki.openstack.org/wiki/Main_Page" target="_blank" rel="noopener">Openstack</a><br>[5] Openstack  Development：<a href="https://developer.openstack.org/" target="_blank" rel="noopener">Openstack</a><br>[7] 创建云主机流程 ：<a href="http://blog.csdn.net/zhongbeida_xue/article/details/54632996" target="_blank" rel="noopener">创建云主机</a></p>
 </blockquote>
-</li>
-</ol>
 
       
     </div>

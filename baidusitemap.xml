@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>http://yoursite.com/2018/03/08/Openstack%E5%AD%A6%E4%B9%A0%E4%B8%8E%E6%80%BB%E7%BB%93%EF%BC%88%E4%B8%80%EF%BC%89/</loc>
+    <lastmod>2018-03-11T08:54:09.480Z</lastmod>
+    <data>
+        <display>
+        <title>Openstack学习与总结(一)——框架介绍</title>
+        <pubTime>2018-03-08T06:27:29.660Z</pubTime>
+        
+        <tag>云计算</tag>
+         
+         
+           
+             
+              <breadCrumb title="程序与算法" url="http://yoursite.com/categories/%E7%A8%8B%E5%BA%8F%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2018/03/10/%E5%85%83%E7%9F%A5%E8%AF%86/</loc>
     <lastmod>2018-03-11T07:58:35.719Z</lastmod>
     <data>
@@ -33,26 +53,6 @@
         <pubTime>2018-02-24T14:49:31.726Z</pubTime>
         
         <tag>技术</tag>
-         
-         
-           
-             
-              <breadCrumb title="程序与算法" url="http://yoursite.com/categories/%E7%A8%8B%E5%BA%8F%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2018/03/08/Openstack%E5%AD%A6%E4%B9%A0%E4%B8%8E%E6%80%BB%E7%BB%93%EF%BC%88%E4%B8%80%EF%BC%89/</loc>
-    <lastmod>2018-03-10T07:04:59.745Z</lastmod>
-    <data>
-        <display>
-        <title>Openstack学习与总结(一)——Openstack框架介绍</title>
-        <pubTime>2018-03-08T06:27:29.660Z</pubTime>
-        
-        <tag>云计算</tag>
          
          
            

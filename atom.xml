@@ -42,13 +42,13 @@
   </entry>
   
   <entry>
-    <title>Openstack学习与总结(一)——Openstack框架介绍</title>
+    <title>Openstack学习与总结(一)——框架介绍</title>
     <link href="http://yoursite.com/2018/03/08/Openstack%E5%AD%A6%E4%B9%A0%E4%B8%8E%E6%80%BB%E7%BB%93%EF%BC%88%E4%B8%80%EF%BC%89/"/>
     <id>http://yoursite.com/2018/03/08/Openstack学习与总结（一）/</id>
     <published>2018-03-08T06:27:29.660Z</published>
-    <updated>2018-03-10T07:04:59.745Z</updated>
+    <updated>2018-03-11T08:54:09.480Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="Openstack学习与总结（一）：框架介绍"><a href="#Openstack学习与总结（一）：框架介绍" class="headerlink" title="Openstack学习与总结（一）：框架介绍"></a>Openstack学习与总结（一）：框架介绍</h1><p>OpenStack是一个云平台管理的项目，它是AWS的开源实现，代码语言采用Python，属于云计算IaaS层的技术，主要负责管理计算、存储以及网络等基础设施资源，附加安全、计量与监控以及控制面板等辅助功能。如下图为Openstack的概念图。</p><p><img src="http://dl2.iteye.com/upload/attachment/0098/2028/53b628ff-1c69-3bc9-bdc2-039d24d71a20.jpg" alt="概念图"></p><p>Openstack系统的发展就是一个利用抽象原则，不断提取通用性的过程，其系统框架主要分为两条线：</p><ul><li>项目之间通过 <a href="http://www.ruanyifeng.com/blog/2014/05/restful_api.html" target="_blank" rel="noopener">REST fulAPI</a> 进行通信；</li><li>项目内部，不同服务进程之间采用基于  <a href="https://baike.baidu.com/item/AMQP" target="_blank" rel="noopener">AMQP模型</a> 的 <a href="https://www.ibm.com/developerworks/cn/cloud/library/1403_renmm_opestackrpc/" target="_blank" rel="noopener">RPC </a> 消息总线的形式进行通信。</li></ul><p>通过这两条线可保证各个项目之间对外提供服务的接口可以被不同类型的客户端支持，同时也保证了项目内部通信的可扩展性和可靠性，以支持大规模的部署。如下图为Openstack的Cinder组件通信示意图。</p><p><img src="https://www.ibm.com/developerworks/cn/cloud/library/1403_renmm_opestackrpc/image003.gif" alt=""></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="Openstack学习与总结（一）：框架介绍"><a href="#Openstack学习与总结（一）：框架介绍" class="headerlink" title="Openstack学习与总结（一）：框架介绍"></a>Openstack学习与总结（一）：框架介绍</h1><p>OpenStack是一个云平台管理的项目，它是AWS的开源实现，代码语言采用Python，属于云计算IaaS层的技术，主要负责管理计算、存储以及网络等基础设施资源，附加安全、计量与监控以及控制面板等辅助功能。如下图为Openstack的概念图。</p><div align="center"><br><img src="http://dl2.iteye.com/upload/attachment/0098/2028/53b628ff-1c69-3bc9-bdc2-039d24d71a20.jpg" alt="概念图"><br></div><p>Openstack系统的发展就是一个利用抽象原则，不断提取通用性的过程，其系统框架主要分为两条线：</p><ul><li>项目之间通过 <a href="http://www.ruanyifeng.com/blog/2014/05/restful_api.html" target="_blank" rel="noopener">REST fulAPI</a> 进行通信；</li><li>项目内部，不同服务进程之间采用基于  <a href="https://baike.baidu.com/item/AMQP" target="_blank" rel="noopener">AMQP模型</a> 的 <a href="https://www.ibm.com/developerworks/cn/cloud/library/1403_renmm_opestackrpc/" target="_blank" rel="noopener">RPC </a> 消息总线的形式进行通信。</li></ul><p>通过这两条线可保证各个项目之间对外提供服务的接口可以被不同类型的客户端支持，同时也保证了项目内部通信的可扩展性和可靠性，以支持大规模的部署。如下图为Openstack的Cinder组件通信示意图。</p><div align="center"><br><img src="https://www.ibm.com/developerworks/cn/cloud/library/1403_renmm_opestackrpc/image003.gif" alt=""><br></div>]]></content>
     
     <summary type="html">
     

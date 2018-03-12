@@ -111,7 +111,7 @@
 <meta property="og:site_name" content="Newton&#39;s">
 <meta property="og:description" content="Openstack学习与总结（二）：代码框架学习Openstack，我的学习方法是以源码为核心，参考活跃度极高的 开源社区以及规范清晰的官方文档为主，其他资源为辅，动手实践贯穿其中。 Openstack开发基础Openstack系统真正意义上运行起来，主要依靠其源码以及源码的运行环境，即所谓的系统开发环境。对于开发人员来说，涉及的基础知识有以下方面：  Python编程。Python是Openst">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-12T10:36:20.850Z">
+<meta property="og:updated_time" content="2018-03-12T12:12:25.424Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Openstack学习与总结(二)——代码框架">
 <meta name="twitter:description" content="Openstack学习与总结（二）：代码框架学习Openstack，我的学习方法是以源码为核心，参考活跃度极高的 开源社区以及规范清晰的官方文档为主，其他资源为辅，动手实践贯穿其中。 Openstack开发基础Openstack系统真正意义上运行起来，主要依靠其源码以及源码的运行环境，即所谓的系统开发环境。对于开发人员来说，涉及的基础知识有以下方面：  Python编程。Python是Openst">
@@ -475,10 +475,8 @@
 <li><code>manager.py</code>： 这个才是真正服务的功能实现，也是RPC的server端，即处理RPC请求的入口，实现的方法通常和rpcapi实现的方法一一对应。</li>
 </ul>
 <p>所有的API入口都是从xxx-api开始的，RESTFul API是OpenStack服务的唯一入口，换言之，阅读源码就从api开始。</p>
-<h2 id="虚拟机执行关键步骤"><a href="#虚拟机执行关键步骤" class="headerlink" title="虚拟机执行关键步骤"></a>虚拟机执行关键步骤</h2><p><strong>API节点</strong></p>
-<p>nova-api接收用户请求 -&gt; nova-api调用compute/api.py -&gt; compute/api调用compute/rpcapi.py -&gt; rpcapi.py向目标计算节点发起stop_instance()RPC请求。</p>
-<p><strong>计算节点</strong></p>
-<p>收到stop_instance()请求 -&gt; 调用compute/manager.py的callback方法stop_instance() -&gt; 调用libvirt关机虚拟机。</p>
+<h2 id="虚拟机执行关键步骤"><a href="#虚拟机执行关键步骤" class="headerlink" title="虚拟机执行关键步骤"></a>虚拟机执行关键步骤</h2><p><strong>API节点</strong><br>nova-api接收用户请求 -&gt; nova-api调用compute/api.py -&gt; compute/api调用compute/rpcapi.py -&gt; rpcapi.py向目标计算节点发起stop_instance()RPC请求。</p>
+<p><strong>计算节点</strong><br>收到stop_instance()请求 -&gt; 调用compute/manager.py的callback方法stop_instance() -&gt; 调用libvirt关机虚拟机。</p>
 
       
     </div>

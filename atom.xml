@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.newtonsz.com/"/>
-  <updated>2018-03-12T12:12:25.424Z</updated>
+  <updated>2018-03-12T12:18:29.585Z</updated>
   <id>https://www.newtonsz.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo工作原理——Hexo+Node.js+Coding</title>
+    <link href="https://www.newtonsz.com/2018/03/12/Hexo%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86/"/>
+    <id>https://www.newtonsz.com/2018/03/12/Hexo工作原理/</id>
+    <published>2018-03-12T12:18:29.585Z</published>
+    <updated>2018-03-12T12:18:29.585Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Hexo工作原理"><a href="#Hexo工作原理" class="headerlink" title="Hexo工作原理"></a>Hexo工作原理</h1>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Hexo工作原理&quot;&gt;&lt;a href=&quot;#Hexo工作原理&quot; class=&quot;headerlink&quot; title=&quot;Hexo工作原理&quot;&gt;&lt;/a&gt;Hexo工作原理&lt;/h1&gt;
+      
+    
+    </summary>
+    
+      <category term="程序与算法" scheme="https://www.newtonsz.com/categories/%E7%A8%8B%E5%BA%8F%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="技术" scheme="https://www.newtonsz.com/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>Openstack学习与总结(二)——代码框架</title>

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.newtonsz.com/"/>
-  <updated>2018-03-13T02:44:35.657Z</updated>
+  <updated>2018-03-13T05:06:49.625Z</updated>
   <id>https://www.newtonsz.com/</id>
   
   <author>
@@ -21,15 +21,15 @@
     <link href="https://www.newtonsz.com/2018/03/12/Hexo%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86/"/>
     <id>https://www.newtonsz.com/2018/03/12/Hexo工作原理/</id>
     <published>2018-03-12T12:18:29.585Z</published>
-    <updated>2018-03-13T02:44:35.657Z</updated>
+    <updated>2018-03-13T05:06:49.625Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="Hexo工作原理"><a href="#Hexo工作原理" class="headerlink" title="Hexo工作原理"></a>Hexo工作原理</h1><p>这段时间几乎都在折腾博客，从博客的搭建、主题配置、购买域名、配置DNS解析到站点SEO、友言</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="Hexo工作原理"><a href="#Hexo工作原理" class="headerlink" title="Hexo工作原理"></a>Hexo工作原理</h1><p>这段时间几乎都在折腾博客，从博客的搭建、主题配置、购买域名、配置DNS解析到站点SEO、畅言评论系统等等。虽然简单，但当一个符合个人审美的界面呈现至面前时，免不了心生喜悦。</p><p>形式百般姿态，如若不解原理，便成了华而不实。知其然，也要知其所以然，这才是做技术应有的态度。</p><p>这篇文章旨在弄懂Hexo博客背后的技术栈以及工作原理。</p><h2 id="技术栈"><a href="#技术栈" class="headerlink" title="技术栈"></a>技术栈</h2><p>博客也是一种轻量级的Web应用，包括前端的展示和后台处理。</p><ul><li><p>前端框架：基于Node.js的Hexo博客框架，将Markdown处理成静态的HTML页面。</p><blockquote><p><strong>什么是Hexo？</strong><br>Hexo—— A fast, simple &amp; powerful blog framework.</p></blockquote></li><li><p>后台处理：借助Git Pages或Coding Pages提供的静态页面展示功能，即Github的每个仓库都会提供pages的功能，用来展示项目，也可以将其视为Web服务器。</p><blockquote><p><strong>什么是Github Pages?</strong><br>GitHub Pages is a static site hosting service designed to host your personal, organization, or project pages directly from a GitHub repository.</p></blockquote></li></ul><h2 id="工作流程"><a href="#工作流程" class="headerlink" title="工作流程"></a>工作流程</h2><p>安装Hexo的Node.js运行环境、git工具以及配置站点与主题的相关信息。Hexo博客系统的工作流程大致为：</p><ol><li>hexo g：完成Markdown到HTML页面的渲染。</li><li>hexo d：将HTML页面相关文件提交至远程仓库，交由Git Pages展示。</li></ol><p><img src="http://coderunthings.com/images/howhexoworks/deploy.png" alt="Hexo项目"></p><p>整个博客系统可视为两个仓库：</p><ul><li>本地仓库：本地代码库，即基于Node.js的Hexo代码库，换而言之，本地仓库就是用来“开发”博客网站。</li><li>远程仓库：远程结果库，即由Hexo generate所产生的public目录仓库，也就是有关HTML页面的内容。</li></ul><h2 id="本地仓库与远程仓库"><a href="#本地仓库与远程仓库" class="headerlink" title="本地仓库与远程仓库"></a>本地仓库与远程仓库</h2><p>Hexo目录下主要包括以下三个子目录：</p><ol><li>sources目录：该目录是开发者的工作目录，包括Markdown文章以及各种图片资源。</li><li>themes目录：该目录为博客主题样式目录。</li><li>public目录：该目录是由Hexo generate所生成的目录，包括博客所需的html、css、js以及images等显示信息，即远程仓库的内容。</li></ol><h2 id="Hexo-generate和Hexo-deploy"><a href="#Hexo-generate和Hexo-deploy" class="headerlink" title="Hexo generate和Hexo deploy"></a>Hexo generate和Hexo deploy</h2><p>Hexo generate包括两次渲染：</p><table><thead><tr><th style="text-align:center">渲染过程</th><th style="text-align:center">输入</th><th style="text-align:center">渲染引擎</th><th style="text-align:center">输出</th></tr></thead><tbody><tr><td style="text-align:center">第一次</td><td style="text-align:center">source/</td><td style="text-align:center">yml和markdown</td><td style="text-align:center">博客的article</td></tr><tr><td style="text-align:center">第二次</td><td style="text-align:center">article和themes/</td><td style="text-align:center">themes/layouts</td><td style="text-align:center">public/</td></tr></tbody></table><p>Hexo deploy主要是根据站点配置文件<code>_config.yml</code>来提交public的内容至远程仓库。<br>通过站点配置文件<code>_config.yml</code>（hexo/）和主题配置文件<code>_config.yml</code>（hexo/themes/）可以实现站点和主题的个性化设置。</p><h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h1 id=&quot;Hexo工作原理&quot;&gt;&lt;a href=&quot;#Hexo工作原理&quot; class=&quot;headerlink&quot; title=&quot;Hexo工作原理&quot;&gt;&lt;/a&gt;Hexo工作原理&lt;/h1&gt;&lt;p&gt;这段时间几乎都在折腾博客，从博客的搭建、主题配置、购买域名、配置DNS解析到站点SEO、友言
+        &lt;h1 id=&quot;Hexo工作原理&quot;&gt;&lt;a href=&quot;#Hexo工作原理&quot; class=&quot;headerlink&quot; title=&quot;Hexo工作原理&quot;&gt;&lt;/a&gt;Hexo工作原理&lt;/h1&gt;&lt;p&gt;这段时间几乎都在折腾博客，从博客的搭建、主题配置、购买域名、配置DNS解析到站点SEO、畅言
       
     
     </summary>

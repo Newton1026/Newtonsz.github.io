@@ -109,13 +109,13 @@
 
 
 
-<meta name="description" content="#Openstack学习与总结（一）：虚拟化  我坚信最好的学习方法是分享。对于知识，只有把它写出来并能够让其他人理解，才能说明真正掌握了这项知识。——CloudMan  虚拟化虚拟化是云计算的基础，简单来说，虚拟化技术使得在一台物理机器上能够运行多台虚机，虚机共享物理机的CPU、内存、IO硬件资源，但逻辑上虚机之间是相互独立的。 物理机一般称为宿主机（Host）,运行在Host上面的虚机称为客户">
+<meta name="description" content="Openstack学习与总结（一）：虚拟化 我坚信最好的学习方法是分享。对于知识，只有把它写出来并能够让其他人理解，才能说明真正掌握了这项知识。——CloudMan  虚拟化虚拟化是云计算的基础，简单来说，虚拟化技术使得在一台物理机器上能够运行多台虚机，虚机共享物理机的CPU、内存、IO硬件资源，但逻辑上虚机之间是相互独立的。 物理机一般称为宿主机（Host）,运行在Host上面的虚机称为客户机（">
 <meta name="keywords" content="云计算">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Openstack学习与总结(一)——虚拟化">
 <meta property="og:url" content="https://www.newtonsz.com/2018/03/22/Openstack学习与总结(一)—虚拟化/index.html">
 <meta property="og:site_name" content="Newton&#39;s">
-<meta property="og:description" content="#Openstack学习与总结（一）：虚拟化  我坚信最好的学习方法是分享。对于知识，只有把它写出来并能够让其他人理解，才能说明真正掌握了这项知识。——CloudMan  虚拟化虚拟化是云计算的基础，简单来说，虚拟化技术使得在一台物理机器上能够运行多台虚机，虚机共享物理机的CPU、内存、IO硬件资源，但逻辑上虚机之间是相互独立的。 物理机一般称为宿主机（Host）,运行在Host上面的虚机称为客户">
+<meta property="og:description" content="Openstack学习与总结（一）：虚拟化 我坚信最好的学习方法是分享。对于知识，只有把它写出来并能够让其他人理解，才能说明真正掌握了这项知识。——CloudMan  虚拟化虚拟化是云计算的基础，简单来说，虚拟化技术使得在一台物理机器上能够运行多台虚机，虚机共享物理机的CPU、内存、IO硬件资源，但逻辑上虚机之间是相互独立的。 物理机一般称为宿主机（Host）,运行在Host上面的虚机称为客户机（">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://i.loli.net/2018/03/22/5ab366fba09bd.jpg">
 <meta property="og:image" content="https://i.loli.net/2018/03/22/5ab368790ad51.jpg">
@@ -124,10 +124,10 @@
 <meta property="og:image" content="https://i.loli.net/2018/03/22/5ab37f2b2eedd.jpg">
 <meta property="og:image" content="https://i.loli.net/2018/03/22/5ab3835cdb91a.jpg">
 <meta property="og:image" content="https://i.loli.net/2018/03/22/5ab3835cdcf55.jpg">
-<meta property="og:updated_time" content="2018-03-22T10:26:13.151Z">
+<meta property="og:updated_time" content="2018-03-22T10:42:50.600Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Openstack学习与总结(一)——虚拟化">
-<meta name="twitter:description" content="#Openstack学习与总结（一）：虚拟化  我坚信最好的学习方法是分享。对于知识，只有把它写出来并能够让其他人理解，才能说明真正掌握了这项知识。——CloudMan  虚拟化虚拟化是云计算的基础，简单来说，虚拟化技术使得在一台物理机器上能够运行多台虚机，虚机共享物理机的CPU、内存、IO硬件资源，但逻辑上虚机之间是相互独立的。 物理机一般称为宿主机（Host）,运行在Host上面的虚机称为客户">
+<meta name="twitter:description" content="Openstack学习与总结（一）：虚拟化 我坚信最好的学习方法是分享。对于知识，只有把它写出来并能够让其他人理解，才能说明真正掌握了这项知识。——CloudMan  虚拟化虚拟化是云计算的基础，简单来说，虚拟化技术使得在一台物理机器上能够运行多台虚机，虚机共享物理机的CPU、内存、IO硬件资源，但逻辑上虚机之间是相互独立的。 物理机一般称为宿主机（Host）,运行在Host上面的虚机称为客户机（">
 <meta name="twitter:image" content="https://i.loli.net/2018/03/22/5ab366fba09bd.jpg">
 
 
@@ -501,14 +501,15 @@
       
 
       
-        <p>#Openstack学习与总结（一）：虚拟化</p>
-<blockquote>
+        <h1 id="Openstack学习与总结（一）：虚拟化"><a href="#Openstack学习与总结（一）：虚拟化" class="headerlink" title="Openstack学习与总结（一）：虚拟化"></a>Openstack学习与总结（一）：虚拟化</h1><blockquote>
 <p>我坚信最好的学习方法是分享。对于知识，只有把它写出来并能够让其他人理解，才能说明真正掌握了这项知识。——CloudMan</p>
 </blockquote>
 <h2 id="虚拟化"><a href="#虚拟化" class="headerlink" title="虚拟化"></a>虚拟化</h2><p>虚拟化是云计算的基础，简单来说，虚拟化技术使得在一台物理机器上能够运行多台虚机，虚机共享物理机的CPU、内存、IO硬件资源，但逻辑上虚机之间是相互独立的。</p>
 <p>物理机一般称为宿主机（Host）,运行在Host上面的虚机称为客户机（Guest）。Hypervisor程序将物理机的资源虚拟化，并提供给Guest使用。</p>
 <p>根据Hypervisor的实现方式和所处的位置，一般将虚拟化分为：1型虚拟化和2型虚拟化。</p>
-<h3 id="1型虚拟化"><a href="#1型虚拟化" class="headerlink" title="1型虚拟化"></a>1型虚拟化</h3><p>Hypervisor直接安装在物理机上，多个虚机在Hypervisor上运行。Hypervisor实现方式一般是一个特制的Linux系统。Xen和VMWare的ESXi都属于该类型。<div align="center"><br><img src="https://i.loli.net/2018/03/22/5ab366fba09bd.jpg" alt="11"><br></div></p>
+<h3 id="1型虚拟化"><a href="#1型虚拟化" class="headerlink" title="1型虚拟化"></a>1型虚拟化</h3><p>Hypervisor直接安装在物理机上，多个虚机在Hypervisor上运行。Hypervisor实现方式一般是一个特制的Linux系统。Xen和VMWare的ESXi都属于该类型。</p>
+<div align="center"><br><img src="https://i.loli.net/2018/03/22/5ab366fba09bd.jpg" alt="11"><br></div>
+
 <h3 id="2型虚拟化"><a href="#2型虚拟化" class="headerlink" title="2型虚拟化"></a>2型虚拟化</h3><p>物理机首先安装常规的OS，Hypervisor作为OS上的一个程序模块运行，并对虚机进行管理。KVM、VirtualBox和VMWare Workstation都属于该类型。</p>
 <div align="center"><br><img src="https://i.loli.net/2018/03/22/5ab368790ad51.jpg" alt="2型虚拟化.jpg"><br></div>
 
@@ -544,33 +545,24 @@
 </ol>
 <h4 id="网络虚拟化"><a href="#网络虚拟化" class="headerlink" title="网络虚拟化"></a>网络虚拟化</h4><p>#####Linux Bridge基本概念</p>
 <blockquote>
-<p>假设宿主机有1块与外网连接的物理网卡eth0，上面运行了1个虚机VM1，如何让VM1能够访问外网？</p>
-</blockquote>
-<p>具体的方案：</p>
+<p>假设宿主机有1块与外网连接的物理网卡eth0，上面运行了1个虚机VM1，如何让VM1能够访问外网？<br>具体的方案：</p>
 <ol>
-<li><p>将物理网卡eth0直接分配给VM1，但这样宿主机就没有网卡可用，即无法访问了；新加的虚机也没有多余的网卡可用。</p>
-</li>
-<li><p>给VM1分配一个虚拟网卡vnet0，通过Linux Bridge br0将eth0和vnet0连接起来，即如下图：<div align="center"></div></p>
-<p><img src="https://i.loli.net/2018/03/22/5ab3729488083.jpg" alt="Linux_Bridge.jpg"><br></p>
-</li>
+<li>将物理网卡eth0直接分配给VM1，但这样宿主机就没有网卡可用，即无法访问了；新加的虚机也没有多余的网卡可用。</li>
+</ol>
+</blockquote>
+<ol>
+<li>给VM1分配一个虚拟网卡vnet0，通过Linux Bridge br0将eth0和vnet0连接起来，即如下图：<div align="center"><br><img src="https://i.loli.net/2018/03/22/5ab3729488083.jpg" alt="Linux_Bridge.jpg"><br></div></li>
 </ol>
 <p>Linux Bridge是Linux上用来做TCP/IP二层协议交换的设备，其功能可以理解为一个二层交换机或Hub。多个网络设备可以连接到同一个Linux Bridge，当某个设备收到数据包时，Linux Bridge会将数据转发给其他设备。</p>
-<p>如果现在新增一台虚机VM2，将其vnet1连接到br0上，现在VM1和VM2之间可以通信，同时两台虚机均可以访问外网。如下图所示。<div align="center"></div></p>
-<p><img src="https://i.loli.net/2018/03/22/5ab373c87c456.jpg" alt="Linux_Bridge2.jpg"><br></p>
-<p>virbr0是KVM默认创建的一个Bridge，其作用是为连接其上的虚机网络提供NAT访问外网的功能。</p>
+<p>如果现在新增一台虚机VM2，将其vnet1连接到br0上，现在VM1和VM2之间可以通信，同时两台虚机均可以访问外网。如下图所示。</p>
+<p><div align="center"><br><img src="https://i.loli.net/2018/03/22/5ab373c87c456.jpg" alt="Linux_Bridge2.jpg"><br></div><br>virbr0是KVM默认创建的一个Bridge，其作用是为连接其上的虚机网络提供NAT访问外网的功能。</p>
 <h4 id="VLAN"><a href="#VLAN" class="headerlink" title="VLAN"></a>VLAN</h4><p>LAN，即Local Area Network，本地局域网，通常使用Hub和Switch来连接LAN中的计算机。一个LAN表示一个广播域，即LAN中的所有成员都会收到任意一个成员发出的广播包。</p>
-<p>VLAN表示Virtual LAN，一个带有VLAN功能的Switch能够将自己的端口划分出多个LAN。计算机发出的广播包可以被同一个LAN中的其他计算机收到，但位于其他LAN的计算机则无法收到。简单讲，VLAN将一个交换机分成了多个交换机，在L2将计算机隔离到不同的VLAN中。VLAN的隔离是L2上的隔离，即L2的广播包无法跨越VLAN的边界。</p>
-<p>通常交换机的端口分为两种配置模式：Access和Trunk。如下图所示。<br><img src="https://i.loli.net/2018/03/22/5ab37f2b2eedd.jpg" alt="VLANTrunking1.jpg"></p>
+<p>VLAN表示Virtual LAN，一个带有VLAN功能的Switch能够将自己的端口划分出多个LAN。计算机发出的广播包可以被同一个LAN中的其他计算机收到，但位于其他LAN的计算机则无法收到。简单讲，VLAN将一个交换机分成了多个交换机，在L2将计算机隔离到不同的VLAN中。VLAN的隔离是L2上的隔离，即L2的广播包无法跨越VLAN的边界。<br>通常交换机的端口分为两种配置模式：Access和Trunk。如下图所示。</p>
+<p><div align="center"><br><img src="https://i.loli.net/2018/03/22/5ab37f2b2eedd.jpg" alt="VLANTrunking1.jpg"><br></div></p>
 <ol>
 <li><strong>Access口</strong>：端口均打上VLAN的标签，表明该端口属于哪个VLAN。不同的VLAN用VLAN ID来区分，其范围是1-4096，Access口均与计算机网卡直接相连，这样从该网卡出来的数据包流入Access口后就被打上了所在VLAN的标签，其只能属于一个VLAN。</li>
-<li><strong>Trunk口</strong>： 不同VLAN中的计算机之间的通信需要借助Trunk口来实现。</li>
+<li><strong>Trunk口</strong>： 不同VLAN中的计算机之间的通信需要借助Trunk口来实现。<br><div align="center"><br><img src="https://i.loli.net/2018/03/22/5ab3835cdb91a.jpg" alt="brvlan0.jpg"><br></div><br>如上图所示，eth0为宿主机的物理网卡，eth0.10与之相连。eth0.10为VLAN设备，其VLAN ID就是VLAN 10。eth0.10挂载命名为brvlan 10的Linux Bridge上，虚机VM1的虚拟网卡vnet0也挂在brvlan 10上。这样宿主机就用软件实现了一个交换机，上面定义了一个VLAN 10。eth0.10、brvlan10和vnet0都分别接到VLAN 10的Access口上，而eth0就是一个Trunk口。VM1通过vnet0发出的数据包会被打上VLAN10的标签。<br>新增一个VLAN 20，如下图所示。<br><div align="center"><br><img src="https://i.loli.net/2018/03/22/5ab3835cdcf55.jpg" alt="brvlan1.jpg"><br></div><h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2>1.<a href="https://mp.weixin.qq.com/s/QtdMkt9giEEnvFTQzO9u7g" target="_blank" rel="noopener">每天5分钟玩转 OpenStack</a><br>2.<a href="http://computernetworkingsimplified.in/data-link-layer/overview-vlan-basic-theory-operation/" target="_blank" rel="noopener">Trunk and Access</a><br>3.<a href="https://en.wikipedia.org/wiki/Virtual_LAN" target="_blank" rel="noopener">VLAN</a></li>
 </ol>
-<div align="center"><br><br><img src="https://i.loli.net/2018/03/22/5ab3835cdb91a.jpg" alt="brvlan0.jpg"><br></div>
-
-<p>如上图所示，eth0为宿主机的物理网卡，eth0.10与之相连。eth0.10为VLAN设备，其VLAN ID就是VLAN 10。eth0.10挂载命名为brvlan 10的Linux Bridge上，虚机VM1的虚拟网卡vnet0也挂在brvlan 10上。这样宿主机就用软件实现了一个交换机，上面定义了一个VLAN 10。eth0.10、brvlan10和vnet0都分别接到VLAN 10的Access口上，而eth0就是一个Trunk口。VM1通过vnet0发出的数据包会被打上VLAN10的标签。</p>
-<p>新增一个VLAN 20，如下图所示。<div align="center"></div></p>
-<p><img src="https://i.loli.net/2018/03/22/5ab3835cdcf55.jpg" alt="brvlan1.jpg"><br></p>
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p>1.<a href="https://mp.weixin.qq.com/s/QtdMkt9giEEnvFTQzO9u7g" target="_blank" rel="noopener">每天5分钟玩转 OpenStack</a><br>2.<a href="http://computernetworkingsimplified.in/data-link-layer/overview-vlan-basic-theory-operation/" target="_blank" rel="noopener">Trunk and Access</a><br>3.<a href="https://en.wikipedia.org/wiki/Virtual_LAN" target="_blank" rel="noopener">VLAN</a></p>
 
       
     </div>
@@ -864,7 +856,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#虚拟化"><span class="nav-number">1.</span> <span class="nav-text">虚拟化</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1型虚拟化"><span class="nav-number">1.1.</span> <span class="nav-text">1型虚拟化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2型虚拟化"><span class="nav-number">1.2.</span> <span class="nav-text">2型虚拟化</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#KVM"><span class="nav-number">2.</span> <span class="nav-text">KVM</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#基本概念"><span class="nav-number">2.1.</span> <span class="nav-text">基本概念</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Libvirt"><span class="nav-number">2.2.</span> <span class="nav-text">Libvirt</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#KVM实战"><span class="nav-number">2.3.</span> <span class="nav-text">KVM实战</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#环境部署"><span class="nav-number">2.3.1.</span> <span class="nav-text">环境部署</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#启动KVM虚机"><span class="nav-number">2.3.2.</span> <span class="nav-text">启动KVM虚机</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#IO虚拟化"><span class="nav-number">2.4.</span> <span class="nav-text">IO虚拟化</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#网络虚拟化"><span class="nav-number">2.4.1.</span> <span class="nav-text">网络虚拟化</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#VLAN"><span class="nav-number">2.4.2.</span> <span class="nav-text">VLAN</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考文献"><span class="nav-number">3.</span> <span class="nav-text">参考文献</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Openstack学习与总结（一）：虚拟化"><span class="nav-number">1.</span> <span class="nav-text">Openstack学习与总结（一）：虚拟化</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#虚拟化"><span class="nav-number">1.1.</span> <span class="nav-text">虚拟化</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1型虚拟化"><span class="nav-number">1.1.1.</span> <span class="nav-text">1型虚拟化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2型虚拟化"><span class="nav-number">1.1.2.</span> <span class="nav-text">2型虚拟化</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#KVM"><span class="nav-number">1.2.</span> <span class="nav-text">KVM</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#基本概念"><span class="nav-number">1.2.1.</span> <span class="nav-text">基本概念</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Libvirt"><span class="nav-number">1.2.2.</span> <span class="nav-text">Libvirt</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#KVM实战"><span class="nav-number">1.2.3.</span> <span class="nav-text">KVM实战</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#环境部署"><span class="nav-number">1.2.3.1.</span> <span class="nav-text">环境部署</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#启动KVM虚机"><span class="nav-number">1.2.3.2.</span> <span class="nav-text">启动KVM虚机</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#IO虚拟化"><span class="nav-number">1.2.4.</span> <span class="nav-text">IO虚拟化</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#网络虚拟化"><span class="nav-number">1.2.4.1.</span> <span class="nav-text">网络虚拟化</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#VLAN"><span class="nav-number">1.2.4.2.</span> <span class="nav-text">VLAN</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考文献"><span class="nav-number">1.3.</span> <span class="nav-text">参考文献</span></a></li></ol></li></ol></div>
             
 
           </div>

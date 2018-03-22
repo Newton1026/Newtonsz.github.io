@@ -5,9 +5,9 @@
   <subtitle>太阳黑子 | 力量、明智和运气</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://www.newtonsz.com/"/>
+  <link href="http://www.newtonsz.com/"/>
   <updated>2018-03-22T10:42:50.600Z</updated>
-  <id>https://www.newtonsz.com/</id>
+  <id>http://www.newtonsz.com/</id>
   
   <author>
     <name>Newton</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Openstack学习与总结(一)——虚拟化</title>
-    <link href="https://www.newtonsz.com/2018/03/22/Openstack%E5%AD%A6%E4%B9%A0%E4%B8%8E%E6%80%BB%E7%BB%93(%E4%B8%80)%E2%80%94%E8%99%9A%E6%8B%9F%E5%8C%96/"/>
-    <id>https://www.newtonsz.com/2018/03/22/Openstack学习与总结(一)—虚拟化/</id>
+    <link href="http://www.newtonsz.com/2018/03/22/Openstack%E5%AD%A6%E4%B9%A0%E4%B8%8E%E6%80%BB%E7%BB%93(%E4%B8%80)%E2%80%94%E8%99%9A%E6%8B%9F%E5%8C%96/"/>
+    <id>http://www.newtonsz.com/2018/03/22/Openstack学习与总结(一)—虚拟化/</id>
     <published>2018-03-22T07:17:11.665Z</published>
     <updated>2018-03-22T10:42:50.600Z</updated>
     
@@ -34,17 +34,17 @@
     
     </summary>
     
-      <category term="程序与算法" scheme="https://www.newtonsz.com/categories/%E7%A8%8B%E5%BA%8F%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
+      <category term="程序与算法" scheme="http://www.newtonsz.com/categories/%E7%A8%8B%E5%BA%8F%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
     
     
-      <category term="云计算" scheme="https://www.newtonsz.com/tags/%E4%BA%91%E8%AE%A1%E7%AE%97/"/>
+      <category term="云计算" scheme="http://www.newtonsz.com/tags/%E4%BA%91%E8%AE%A1%E7%AE%97/"/>
     
   </entry>
   
   <entry>
     <title>牛津通识读本之心理学</title>
-    <link href="https://www.newtonsz.com/2018/03/15/%E7%89%9B%E6%B4%A5%E9%80%9A%E8%AF%86%E8%AF%BB%E6%9C%AC%E4%B9%8B%E5%BF%83%E7%90%86%E5%AD%A6/"/>
-    <id>https://www.newtonsz.com/2018/03/15/牛津通识读本之心理学/</id>
+    <link href="http://www.newtonsz.com/2018/03/15/%E7%89%9B%E6%B4%A5%E9%80%9A%E8%AF%86%E8%AF%BB%E6%9C%AC%E4%B9%8B%E5%BF%83%E7%90%86%E5%AD%A6/"/>
+    <id>http://www.newtonsz.com/2018/03/15/牛津通识读本之心理学/</id>
     <published>2018-03-15T01:25:11.901Z</published>
     <updated>2018-03-15T12:06:40.155Z</updated>
     
@@ -60,17 +60,17 @@
     
     </summary>
     
-      <category term="阅读与思考" scheme="https://www.newtonsz.com/categories/%E9%98%85%E8%AF%BB%E4%B8%8E%E6%80%9D%E8%80%83/"/>
+      <category term="阅读与思考" scheme="http://www.newtonsz.com/categories/%E9%98%85%E8%AF%BB%E4%B8%8E%E6%80%9D%E8%80%83/"/>
     
     
-      <category term="阅读；牛津通识读本" scheme="https://www.newtonsz.com/tags/%E9%98%85%E8%AF%BB%EF%BC%9B%E7%89%9B%E6%B4%A5%E9%80%9A%E8%AF%86%E8%AF%BB%E6%9C%AC/"/>
+      <category term="阅读；牛津通识读本" scheme="http://www.newtonsz.com/tags/%E9%98%85%E8%AF%BB%EF%BC%9B%E7%89%9B%E6%B4%A5%E9%80%9A%E8%AF%86%E8%AF%BB%E6%9C%AC/"/>
     
   </entry>
   
   <entry>
     <title>Hexo工作原理</title>
-    <link href="https://www.newtonsz.com/2018/03/13/Hexo%E5%8E%9F%E7%90%86/"/>
-    <id>https://www.newtonsz.com/2018/03/13/Hexo原理/</id>
+    <link href="http://www.newtonsz.com/2018/03/13/Hexo%E5%8E%9F%E7%90%86/"/>
+    <id>http://www.newtonsz.com/2018/03/13/Hexo原理/</id>
     <published>2018-03-13T06:37:42.404Z</published>
     <updated>2018-03-13T07:58:38.154Z</updated>
     
@@ -85,17 +85,17 @@
     
     </summary>
     
-      <category term="程序与算法" scheme="https://www.newtonsz.com/categories/%E7%A8%8B%E5%BA%8F%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
+      <category term="程序与算法" scheme="http://www.newtonsz.com/categories/%E7%A8%8B%E5%BA%8F%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
     
     
-      <category term="技术" scheme="https://www.newtonsz.com/tags/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="http://www.newtonsz.com/tags/%E6%8A%80%E6%9C%AF/"/>
     
   </entry>
   
   <entry>
     <title>Openstack学习与总结(三)——代码框架</title>
-    <link href="https://www.newtonsz.com/2018/03/12/Openstack%E5%AD%A6%E4%B9%A0%E4%B8%8E%E6%80%BB%E7%BB%93(%E4%B8%89)%E2%80%94%E4%BB%A3%E7%A0%81%E6%A1%86%E6%9E%B6/"/>
-    <id>https://www.newtonsz.com/2018/03/12/Openstack学习与总结(三)—代码框架/</id>
+    <link href="http://www.newtonsz.com/2018/03/12/Openstack%E5%AD%A6%E4%B9%A0%E4%B8%8E%E6%80%BB%E7%BB%93(%E4%B8%89)%E2%80%94%E4%BB%A3%E7%A0%81%E6%A1%86%E6%9E%B6/"/>
+    <id>http://www.newtonsz.com/2018/03/12/Openstack学习与总结(三)—代码框架/</id>
     <published>2018-03-12T08:27:09.465Z</published>
     <updated>2018-03-13T10:57:35.898Z</updated>
     
@@ -110,17 +110,17 @@
     
     </summary>
     
-      <category term="程序与算法" scheme="https://www.newtonsz.com/categories/%E7%A8%8B%E5%BA%8F%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
+      <category term="程序与算法" scheme="http://www.newtonsz.com/categories/%E7%A8%8B%E5%BA%8F%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
     
     
-      <category term="云计算" scheme="https://www.newtonsz.com/tags/%E4%BA%91%E8%AE%A1%E7%AE%97/"/>
+      <category term="云计算" scheme="http://www.newtonsz.com/tags/%E4%BA%91%E8%AE%A1%E7%AE%97/"/>
     
   </entry>
   
   <entry>
     <title>Openstack学习与总结(二)——框架介绍</title>
-    <link href="https://www.newtonsz.com/2018/03/11/Openstack%E5%AD%A6%E4%B9%A0%E4%B8%8E%E6%80%BB%E7%BB%93(%E4%BA%8C)%E2%80%94%E6%A1%86%E6%9E%B6%E4%BB%8B%E7%BB%8D/"/>
-    <id>https://www.newtonsz.com/2018/03/11/Openstack学习与总结(二)—框架介绍/</id>
+    <link href="http://www.newtonsz.com/2018/03/11/Openstack%E5%AD%A6%E4%B9%A0%E4%B8%8E%E6%80%BB%E7%BB%93(%E4%BA%8C)%E2%80%94%E6%A1%86%E6%9E%B6%E4%BB%8B%E7%BB%8D/"/>
+    <id>http://www.newtonsz.com/2018/03/11/Openstack学习与总结(二)—框架介绍/</id>
     <published>2018-03-11T13:39:24.796Z</published>
     <updated>2018-03-12T08:31:14.701Z</updated>
     
@@ -135,17 +135,17 @@
     
     </summary>
     
-      <category term="程序与算法" scheme="https://www.newtonsz.com/categories/%E7%A8%8B%E5%BA%8F%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
+      <category term="程序与算法" scheme="http://www.newtonsz.com/categories/%E7%A8%8B%E5%BA%8F%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
     
     
-      <category term="云计算" scheme="https://www.newtonsz.com/tags/%E4%BA%91%E8%AE%A1%E7%AE%97/"/>
+      <category term="云计算" scheme="http://www.newtonsz.com/tags/%E4%BA%91%E8%AE%A1%E7%AE%97/"/>
     
   </entry>
   
   <entry>
     <title>资源与工具</title>
-    <link href="https://www.newtonsz.com/2018/03/10/%E5%85%83%E7%9F%A5%E8%AF%86/"/>
-    <id>https://www.newtonsz.com/2018/03/10/元知识/</id>
+    <link href="http://www.newtonsz.com/2018/03/10/%E5%85%83%E7%9F%A5%E8%AF%86/"/>
+    <id>http://www.newtonsz.com/2018/03/10/元知识/</id>
     <published>2018-03-10T07:20:12.509Z</published>
     <updated>2018-03-13T14:07:09.235Z</updated>
     
@@ -160,17 +160,17 @@
     
     </summary>
     
-      <category term="资源与工具" scheme="https://www.newtonsz.com/categories/%E8%B5%84%E6%BA%90%E4%B8%8E%E5%B7%A5%E5%85%B7/"/>
+      <category term="资源与工具" scheme="http://www.newtonsz.com/categories/%E8%B5%84%E6%BA%90%E4%B8%8E%E5%B7%A5%E5%85%B7/"/>
     
     
-      <category term="元知识" scheme="https://www.newtonsz.com/tags/%E5%85%83%E7%9F%A5%E8%AF%86/"/>
+      <category term="元知识" scheme="http://www.newtonsz.com/tags/%E5%85%83%E7%9F%A5%E8%AF%86/"/>
     
   </entry>
   
   <entry>
     <title>云计算概述</title>
-    <link href="https://www.newtonsz.com/2018/03/05/%E4%BA%91%E8%AE%A1%E7%AE%97%E6%A6%82%E8%BF%B0/"/>
-    <id>https://www.newtonsz.com/2018/03/05/云计算概述/</id>
+    <link href="http://www.newtonsz.com/2018/03/05/%E4%BA%91%E8%AE%A1%E7%AE%97%E6%A6%82%E8%BF%B0/"/>
+    <id>http://www.newtonsz.com/2018/03/05/云计算概述/</id>
     <published>2018-03-05T07:54:22.315Z</published>
     <updated>2018-03-11T13:48:48.811Z</updated>
     
@@ -186,17 +186,17 @@
     
     </summary>
     
-      <category term="程序与算法" scheme="https://www.newtonsz.com/categories/%E7%A8%8B%E5%BA%8F%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
+      <category term="程序与算法" scheme="http://www.newtonsz.com/categories/%E7%A8%8B%E5%BA%8F%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
     
     
-      <category term="云计算" scheme="https://www.newtonsz.com/tags/%E4%BA%91%E8%AE%A1%E7%AE%97/"/>
+      <category term="云计算" scheme="http://www.newtonsz.com/tags/%E4%BA%91%E8%AE%A1%E7%AE%97/"/>
     
   </entry>
   
   <entry>
     <title>浅谈科技论文之写作方法</title>
-    <link href="https://www.newtonsz.com/2018/03/03/%E6%B5%85%E8%B0%88%E7%A7%91%E6%8A%80%E8%AE%BA%E6%96%87%E4%B9%8B%E5%86%99%E4%BD%9C%E6%96%B9%E6%B3%95/"/>
-    <id>https://www.newtonsz.com/2018/03/03/浅谈科技论文之写作方法/</id>
+    <link href="http://www.newtonsz.com/2018/03/03/%E6%B5%85%E8%B0%88%E7%A7%91%E6%8A%80%E8%AE%BA%E6%96%87%E4%B9%8B%E5%86%99%E4%BD%9C%E6%96%B9%E6%B3%95/"/>
+    <id>http://www.newtonsz.com/2018/03/03/浅谈科技论文之写作方法/</id>
     <published>2018-03-03T10:47:35.059Z</published>
     <updated>2018-03-10T05:59:45.700Z</updated>
     
@@ -211,17 +211,17 @@
     
     </summary>
     
-      <category term="阅读与思考" scheme="https://www.newtonsz.com/categories/%E9%98%85%E8%AF%BB%E4%B8%8E%E6%80%9D%E8%80%83/"/>
+      <category term="阅读与思考" scheme="http://www.newtonsz.com/categories/%E9%98%85%E8%AF%BB%E4%B8%8E%E6%80%9D%E8%80%83/"/>
     
     
-      <category term="思考" scheme="https://www.newtonsz.com/tags/%E6%80%9D%E8%80%83/"/>
+      <category term="思考" scheme="http://www.newtonsz.com/tags/%E6%80%9D%E8%80%83/"/>
     
   </entry>
   
   <entry>
     <title>计算机知识体系</title>
-    <link href="https://www.newtonsz.com/2018/02/24/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB/"/>
-    <id>https://www.newtonsz.com/2018/02/24/计算机知识体系/</id>
+    <link href="http://www.newtonsz.com/2018/02/24/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB/"/>
+    <id>http://www.newtonsz.com/2018/02/24/计算机知识体系/</id>
     <published>2018-02-24T14:49:31.726Z</published>
     <updated>2018-03-10T07:17:40.775Z</updated>
     
@@ -236,17 +236,17 @@
     
     </summary>
     
-      <category term="程序与算法" scheme="https://www.newtonsz.com/categories/%E7%A8%8B%E5%BA%8F%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
+      <category term="程序与算法" scheme="http://www.newtonsz.com/categories/%E7%A8%8B%E5%BA%8F%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
     
     
-      <category term="技术" scheme="https://www.newtonsz.com/tags/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="http://www.newtonsz.com/tags/%E6%8A%80%E6%9C%AF/"/>
     
   </entry>
   
   <entry>
     <title>阅读</title>
-    <link href="https://www.newtonsz.com/2018/02/05/%E9%98%85%E8%AF%BB/"/>
-    <id>https://www.newtonsz.com/2018/02/05/阅读/</id>
+    <link href="http://www.newtonsz.com/2018/02/05/%E9%98%85%E8%AF%BB/"/>
+    <id>http://www.newtonsz.com/2018/02/05/阅读/</id>
     <published>2018-02-05T11:24:09.227Z</published>
     <updated>2018-03-13T07:58:38.154Z</updated>
     
@@ -263,10 +263,10 @@
     
     </summary>
     
-      <category term="阅读与思考" scheme="https://www.newtonsz.com/categories/%E9%98%85%E8%AF%BB%E4%B8%8E%E6%80%9D%E8%80%83/"/>
+      <category term="阅读与思考" scheme="http://www.newtonsz.com/categories/%E9%98%85%E8%AF%BB%E4%B8%8E%E6%80%9D%E8%80%83/"/>
     
     
-      <category term="阅读" scheme="https://www.newtonsz.com/tags/%E9%98%85%E8%AF%BB/"/>
+      <category term="阅读" scheme="http://www.newtonsz.com/tags/%E9%98%85%E8%AF%BB/"/>
     
   </entry>
   

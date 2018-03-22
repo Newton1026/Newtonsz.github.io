@@ -464,7 +464,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1,503
+                  1,502
                 </span>
               
 
@@ -507,21 +507,14 @@
 <h2 id="虚拟化"><a href="#虚拟化" class="headerlink" title="虚拟化"></a>虚拟化</h2><p>虚拟化是云计算的基础，简单来说，虚拟化技术使得在一台物理机器上能够运行多台虚机，虚机共享物理机的CPU、内存、IO硬件资源，但逻辑上虚机之间是相互独立的。</p>
 <p>物理机一般称为宿主机（Host）,运行在Host上面的虚机称为客户机（Guest）。Hypervisor程序将物理机的资源虚拟化，并提供给Guest使用。</p>
 <p>根据Hypervisor的实现方式和所处的位置，一般将虚拟化分为：1型虚拟化和2型虚拟化。</p>
-<h3 id="1型虚拟化"><a href="#1型虚拟化" class="headerlink" title="1型虚拟化"></a>1型虚拟化</h3><p>Hypervisor直接安装在物理机上，多个虚机在Hypervisor上运行。Hypervisor实现方式一般是一个特制的Linux系统。Xen和VMWare的ESXi都属于该类型。</p>
-<div align="center"><br><img src="https://i.loli.net/2018/03/22/5ab366fba09bd.jpg" alt="11"><br></div>
-
-<h3 id="2型虚拟化"><a href="#2型虚拟化" class="headerlink" title="2型虚拟化"></a>2型虚拟化</h3><p>物理机首先安装常规的OS，Hypervisor作为OS上的一个程序模块运行，并对虚机进行管理。KVM、VirtualBox和VMWare Workstation都属于该类型。</p>
-<div align="center"><br><img src="https://i.loli.net/2018/03/22/5ab368790ad51.jpg" alt="2型虚拟化.jpg"><br></div>
-
+<h3 id="1型虚拟化"><a href="#1型虚拟化" class="headerlink" title="1型虚拟化"></a>1型虚拟化</h3><p>Hypervisor直接安装在物理机上，多个虚机在Hypervisor上运行。Hypervisor实现方式一般是一个特制的Linux系统。Xen和VMWare的ESXi都属于该类型。<div align="center"><br><img src="https://i.loli.net/2018/03/22/5ab366fba09bd.jpg" alt="11"><br></div></p>
+<h3 id="2型虚拟化"><a href="#2型虚拟化" class="headerlink" title="2型虚拟化"></a>2型虚拟化</h3><p>物理机首先安装常规的OS，Hypervisor作为OS上的一个程序模块运行，并对虚机进行管理。KVM、VirtualBox和VMWare Workstation都属于该类型。<div align="center"><br><img src="https://i.loli.net/2018/03/22/5ab368790ad51.jpg" alt="2型虚拟化.jpg"><br></div></p>
 <h2 id="KVM"><a href="#KVM" class="headerlink" title="KVM"></a>KVM</h2><h3 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h3><p>在x86平台上最常用的Hypervisor虚拟化方案是KVM，即Kernel-Based Virtual Machine。换句话说，KVM是基于Linux内核实现的。KVM有个内核模块kvm.ko，只用于管理虚拟CPU和内存。IO的虚拟化（存储和网络设备）是由Linux内核和Qemu来实现的。</p>
 <h3 id="Libvirt"><a href="#Libvirt" class="headerlink" title="Libvirt"></a>Libvirt</h3><p>Libvirt是Hypervisor KVM的管理工具，其包含三个模块：</p>
 <ol>
 <li>libvirt。作为后台daemon程序，它接收和处理API请求；</li>
 <li>API库。使得开发人员能够开发基于Libvirt的高级工具，比如图形化KVM管理工具virt-manager；</li>
-<li>virsh。常用的KVM命令行工具。</li>
-</ol>
-<h3 id="KVM实战"><a href="#KVM实战" class="headerlink" title="KVM实战"></a>KVM实战</h3><h4 id="环境部署"><a href="#环境部署" class="headerlink" title="环境部署"></a>环境部署</h4><p>KVM属于2型虚拟化，即其运行在OS上面的。KVM的实战，常规步骤如下：</p>
-<ol>
+<li>virsh。常用的KVM命令行工具。<h3 id="KVM实战"><a href="#KVM实战" class="headerlink" title="KVM实战"></a>KVM实战</h3><h4 id="环境部署"><a href="#环境部署" class="headerlink" title="环境部署"></a>环境部署</h4>KVM属于2型虚拟化，即其运行在OS上面的。KVM的实战，常规步骤如下：</li>
 <li>获得源码。</li>
 <li>配置系统环境以及源码依赖源。</li>
 <li>安装部署。</li>
@@ -533,35 +526,30 @@
 <li>qemu-kvm和qemu-system。KVM和QEMU的核心包，提供CPU、内存和IO虚拟化功能。</li>
 <li>libvirt-bin。libvirt管理KVM的工具。</li>
 <li>vir-manager。KVM图形化工具。</li>
-<li>bridge-utils和vlan。主要用于网络虚拟化，KVM网络虚拟化的实现是基于linux-bridge和VLAN。</li>
+<li>bridge-utils和vlan。主要用于网络虚拟化，KVM网络虚拟化的实现是基于linux-bridge和VLAN。<h4 id="启动KVM虚机"><a href="#启动KVM虚机" class="headerlink" title="启动KVM虚机"></a>启动KVM虚机</h4>操作步骤类似于Wmware workstation上创建虚机。首先启动KVM图形化界面：<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> virt-manage</span><br></pre></td></tr></table></figure>
+</li>
 </ul>
-<h4 id="启动KVM虚机"><a href="#启动KVM虚机" class="headerlink" title="启动KVM虚机"></a>启动KVM虚机</h4><p>操作步骤类似于Wmware workstation上创建虚机。首先启动KVM图形化界面：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> virt-manage</span><br></pre></td></tr></table></figure></p>
 <p>接下来步骤就是针对虚机进行资源的配置，包括虚机名字、镜像文件、CPU和内存分配等等。然后就可以查看宿主机上的虚机：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> virsh list</span><br></pre></td></tr></table></figure></p>
 <p>最后，利用QEMU来虚拟IO资源，包括存储和网络。</p>
 <h3 id="IO虚拟化"><a href="#IO虚拟化" class="headerlink" title="IO虚拟化"></a>IO虚拟化</h3><p>IO虚拟化包括存储和网络设备的虚拟化。</p>
 <ol>
 <li>KVM的存储虚拟化是通过存储池（Storage Pool）和卷（Volume）来管理的。</li>
-<li>网络虚拟化中最重要的两个东西：Linux Bridge和VLAN。</li>
-</ol>
-<h4 id="网络虚拟化"><a href="#网络虚拟化" class="headerlink" title="网络虚拟化"></a>网络虚拟化</h4><p>#####Linux Bridge基本概念</p>
-<blockquote>
+<li>网络虚拟化中最重要的两个东西：Linux Bridge和VLAN。<h4 id="网络虚拟化"><a href="#网络虚拟化" class="headerlink" title="网络虚拟化"></a>网络虚拟化</h4>#####Linux Bridge基本概念<blockquote>
 <p>假设宿主机有1块与外网连接的物理网卡eth0，上面运行了1个虚机VM1，如何让VM1能够访问外网？<br>具体的方案：</p>
-<ol>
-<li>将物理网卡eth0直接分配给VM1，但这样宿主机就没有网卡可用，即无法访问了；新加的虚机也没有多余的网卡可用。</li>
-</ol>
 </blockquote>
-<ol>
-<li>给VM1分配一个虚拟网卡vnet0，通过Linux Bridge br0将eth0和vnet0连接起来，即如下图：<div align="center"><br><img src="https://i.loli.net/2018/03/22/5ab3729488083.jpg" alt="Linux_Bridge.jpg"><br></div></li>
+</li>
+<li><p>将物理网卡eth0直接分配给VM1，但这样宿主机就没有网卡可用，即无法访问了；新加的虚机也没有多余的网卡可用。</p>
+</li>
+<li><p>给VM1分配一个虚拟网卡vnet0，通过Linux Bridge br0将eth0和vnet0连接起来，即如下图：<div align="center"></div></p>
+<p><img src="https://i.loli.net/2018/03/22/5ab3729488083.jpg" alt="Linux_Bridge.jpg"><br></p>
+</li>
 </ol>
-<p>Linux Bridge是Linux上用来做TCP/IP二层协议交换的设备，其功能可以理解为一个二层交换机或Hub。多个网络设备可以连接到同一个Linux Bridge，当某个设备收到数据包时，Linux Bridge会将数据转发给其他设备。</p>
-<p>如果现在新增一台虚机VM2，将其vnet1连接到br0上，现在VM1和VM2之间可以通信，同时两台虚机均可以访问外网。如下图所示。</p>
-<p><div align="center"><br><img src="https://i.loli.net/2018/03/22/5ab373c87c456.jpg" alt="Linux_Bridge2.jpg"><br></div><br>virbr0是KVM默认创建的一个Bridge，其作用是为连接其上的虚机网络提供NAT访问外网的功能。</p>
+<p>Linux Bridge是Linux上用来做TCP/IP二层协议交换的设备，其功能可以理解为一个二层交换机或Hub。多个网络设备可以连接到同一个Linux Bridge，当某个设备收到数据包时，Linux Bridge会将数据转发给其他设备。<br>如果现在新增一台虚机VM2，将其vnet1连接到br0上，现在VM1和VM2之间可以通信，同时两台虚机均可以访问外网。如下图所示。<div align="center"><br><img src="https://i.loli.net/2018/03/22/5ab373c87c456.jpg" alt="Linux_Bridge2.jpg"><br></div><br>virbr0是KVM默认创建的一个Bridge，其作用是为连接其上的虚机网络提供NAT访问外网的功能。</p>
 <h4 id="VLAN"><a href="#VLAN" class="headerlink" title="VLAN"></a>VLAN</h4><p>LAN，即Local Area Network，本地局域网，通常使用Hub和Switch来连接LAN中的计算机。一个LAN表示一个广播域，即LAN中的所有成员都会收到任意一个成员发出的广播包。</p>
-<p>VLAN表示Virtual LAN，一个带有VLAN功能的Switch能够将自己的端口划分出多个LAN。计算机发出的广播包可以被同一个LAN中的其他计算机收到，但位于其他LAN的计算机则无法收到。简单讲，VLAN将一个交换机分成了多个交换机，在L2将计算机隔离到不同的VLAN中。VLAN的隔离是L2上的隔离，即L2的广播包无法跨越VLAN的边界。<br>通常交换机的端口分为两种配置模式：Access和Trunk。如下图所示。</p>
-<p><div align="center"><br><img src="https://i.loli.net/2018/03/22/5ab37f2b2eedd.jpg" alt="VLANTrunking1.jpg"><br></div></p>
+<p>VLAN表示Virtual LAN，一个带有VLAN功能的Switch能够将自己的端口划分出多个LAN。计算机发出的广播包可以被同一个LAN中的其他计算机收到，但位于其他LAN的计算机则无法收到。简单讲，VLAN将一个交换机分成了多个交换机，在L2将计算机隔离到不同的VLAN中。VLAN的隔离是L2上的隔离，即L2的广播包无法跨越VLAN的边界。<br>通常交换机的端口分为两种配置模式：Access和Trunk。如下图所示。<div align="center"><br><img src="https://i.loli.net/2018/03/22/5ab37f2b2eedd.jpg" alt="VLANTrunking1.jpg"><br></div></p>
 <ol>
 <li><strong>Access口</strong>：端口均打上VLAN的标签，表明该端口属于哪个VLAN。不同的VLAN用VLAN ID来区分，其范围是1-4096，Access口均与计算机网卡直接相连，这样从该网卡出来的数据包流入Access口后就被打上了所在VLAN的标签，其只能属于一个VLAN。</li>
-<li><strong>Trunk口</strong>： 不同VLAN中的计算机之间的通信需要借助Trunk口来实现。<br><div align="center"><br><img src="https://i.loli.net/2018/03/22/5ab3835cdb91a.jpg" alt="brvlan0.jpg"><br></div><br>如上图所示，eth0为宿主机的物理网卡，eth0.10与之相连。eth0.10为VLAN设备，其VLAN ID就是VLAN 10。eth0.10挂载命名为brvlan 10的Linux Bridge上，虚机VM1的虚拟网卡vnet0也挂在brvlan 10上。这样宿主机就用软件实现了一个交换机，上面定义了一个VLAN 10。eth0.10、brvlan10和vnet0都分别接到VLAN 10的Access口上，而eth0就是一个Trunk口。VM1通过vnet0发出的数据包会被打上VLAN10的标签。<br>新增一个VLAN 20，如下图所示。<br><div align="center"><br><img src="https://i.loli.net/2018/03/22/5ab3835cdcf55.jpg" alt="brvlan1.jpg"><br></div><h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2>1.<a href="https://mp.weixin.qq.com/s/QtdMkt9giEEnvFTQzO9u7g" target="_blank" rel="noopener">每天5分钟玩转 OpenStack</a><br>2.<a href="http://computernetworkingsimplified.in/data-link-layer/overview-vlan-basic-theory-operation/" target="_blank" rel="noopener">Trunk and Access</a><br>3.<a href="https://en.wikipedia.org/wiki/Virtual_LAN" target="_blank" rel="noopener">VLAN</a></li>
+<li><strong>Trunk口</strong>： 不同VLAN中的计算机之间的通信需要借助Trunk口来实现。<div align="center"><br><img src="https://i.loli.net/2018/03/22/5ab3835cdb91a.jpg" alt="brvlan0.jpg"><br></div><br>如上图所示，eth0为宿主机的物理网卡，eth0.10与之相连。eth0.10为VLAN设备，其VLAN ID就是VLAN 10。eth0.10挂载命名为brvlan 10的Linux Bridge上，虚机VM1的虚拟网卡vnet0也挂在brvlan 10上。这样宿主机就用软件实现了一个交换机，上面定义了一个VLAN 10。eth0.10、brvlan10和vnet0都分别接到VLAN 10的Access口上，而eth0就是一个Trunk口。VM1通过vnet0发出的数据包会被打上VLAN10的标签。<br>新增一个VLAN 20，如下图所示。<div align="center"><br><img src="https://i.loli.net/2018/03/22/5ab3835cdcf55.jpg" alt="brvlan1.jpg"><br></div><h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2>1.<a href="https://mp.weixin.qq.com/s/QtdMkt9giEEnvFTQzO9u7g" target="_blank" rel="noopener">每天5分钟玩转 OpenStack</a><br>2.<a href="http://computernetworkingsimplified.in/data-link-layer/overview-vlan-basic-theory-operation/" target="_blank" rel="noopener">Trunk and Access</a><br>3.<a href="https://en.wikipedia.org/wiki/Virtual_LAN" target="_blank" rel="noopener">VLAN</a></li>
 </ol>
 
       
